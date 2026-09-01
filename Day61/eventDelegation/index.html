@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #parent {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        height: 70vh;
+      }
+      .boxes {
+        background-color: rgb(94, 154, 154);
+      }
+
+      #footer {
+        border: 2px solid black;
+        height: 25vh;
+        margin-top: 2vh;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="parent">
+      <article class="boxes">Apple</article>
+      <article class="boxes">Mango</article>
+      <article class="boxes">Banana</article>
+      <article class="boxes">Guava</article>
+      <article class="boxes">Litchi</article>
+      <article class="boxes">Pine Apple</article>
+      <article class="boxes">Dragon fruits</article>
+      <article class="boxes">Avacado</article>
+    </main>
+    <div id="footer"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

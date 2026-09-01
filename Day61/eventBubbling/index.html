@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #gParent {
+        height: 400px;
+        width: 400px;
+        background-color: #1c7ee0; /* Dark Blue */
+      }
+
+      #parent {
+        height: 300px;
+        width: 300px;
+        background-color: #e74c3c; /* Red */
+      }
+
+      #child {
+        height: 200px;
+        width: 200px;
+        background-color: #f1c40f; /* Yellow */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gParent">
+      G Parent
+      <div id="parent">
+        Parent
+        <div id="child">Child</div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
