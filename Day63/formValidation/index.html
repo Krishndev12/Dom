@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="regForm" action="">
+      <div>
+        <label for="userName">Username:</label>
+        <input id="userName" type="text" placeholder="enter username" />
+        <br />
+        <span id="userError">username should be between 4-8 character</span>
+      </div>
+      <div>
+        <label for="userEmail">Email:</label>
+        <input id="userEmail" type="text" placeholder="enter email" />
+        <br />
+        <span id="emailError">email should be contain @gmail</span>
+      </div>
+      <div>
+        <label for="userPassword">Password:</label>
+        <input id="userPassword" type="password" placeholder="enter password" />
+        <br />
+        <span id="passError"
+          >password should have one uppercase, lowercase and special
+          character</span
+        >
+      </div>
+
+      <div>
+        <label for="cities">Choose your city:</label>
+        <select name="cities" id="cities">
+          <option value="ny">New York</option>
+          <option value="nd">New Delhi</option>
+          <option value="hy">Hyderabad</option>
+          <option value="bn">Bangalore</option>
+          <option value="pn">Pune</option>
+        </select>
+      </div>
+
+      <div>
+        <legend>Gender:</legend>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="non-binary" name="gender" value="non-binary" />
+        <label for="non-binary">Non-binary</label>
+        <input
+          type="radio"
+          id="prefer-not-to-say"
+          name="gender"
+          value="prefer-not-to-say"
+          checked
+        />
+        <label for="prefer-not-to-say">Prefer not to say</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>
