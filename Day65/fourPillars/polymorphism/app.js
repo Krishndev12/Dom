@@ -45,3 +45,16 @@ console.log(c1);
 gP1.greet();
 p1.greet();
 c1.greet(); // yaha jaise ham c1.greet() call kiye to sabse pahle isme c1 yani Child class me check hoga age isme nahi hai to, feer Parent me check hoga agar yaha bhi nahi hai to Gparent me check hoga. kyuki jab ham inherit karte hai to base class ka prototype derive class me hota hai.
+
+// ⭐⭐⭐⭐⭐⭐ why method overloading is not possible in js
+
+function abc() {
+  console.log("Hello abc");
+}
+
+function abc() {
+  console.log("Hello xyz");
+}
+
+abc(); // Hello xyz
+// kyuki mcp me function ko second function abc replace kar deta hai isiliye function overloading nahi ho pata js me. same name se multiple functions hai to last wala hi chalega.
