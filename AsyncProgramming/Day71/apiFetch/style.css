@@ -1,0 +1,8 @@
+.article {
+  border: 2px solid black;
+  display: inline-block;
+}
+
+.image{
+    width: 300px;
+}
